@@ -1,0 +1,12 @@
+/Users/markedwards/C#/helloAgain/bin/Debug/netcoreapp3.1/helloAgain.deps.json
+/Users/markedwards/C#/helloAgain/bin/Debug/netcoreapp3.1/helloAgain.runtimeconfig.json
+/Users/markedwards/C#/helloAgain/bin/Debug/netcoreapp3.1/helloAgain.runtimeconfig.dev.json
+/Users/markedwards/C#/helloAgain/bin/Debug/netcoreapp3.1/helloAgain.dll
+/Users/markedwards/C#/helloAgain/bin/Debug/netcoreapp3.1/helloAgain.pdb
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.csprojAssemblyReference.cache
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.AssemblyInfoInputs.cache
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.AssemblyInfo.cs
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.csproj.CoreCompileInputs.cache
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.dll
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.pdb
+/Users/markedwards/C#/helloAgain/obj/Debug/netcoreapp3.1/helloAgain.genruntimeconfig.cache
