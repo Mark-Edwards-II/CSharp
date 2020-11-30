@@ -1,0 +1,12 @@
+/Users/markedwards/C#/fundamentalsI/bin/Debug/netcoreapp3.1/fundamentalsI.deps.json
+/Users/markedwards/C#/fundamentalsI/bin/Debug/netcoreapp3.1/fundamentalsI.runtimeconfig.json
+/Users/markedwards/C#/fundamentalsI/bin/Debug/netcoreapp3.1/fundamentalsI.runtimeconfig.dev.json
+/Users/markedwards/C#/fundamentalsI/bin/Debug/netcoreapp3.1/fundamentalsI.dll
+/Users/markedwards/C#/fundamentalsI/bin/Debug/netcoreapp3.1/fundamentalsI.pdb
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.csprojAssemblyReference.cache
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.AssemblyInfoInputs.cache
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.AssemblyInfo.cs
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.csproj.CoreCompileInputs.cache
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.dll
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.pdb
+/Users/markedwards/C#/fundamentalsI/obj/Debug/netcoreapp3.1/fundamentalsI.genruntimeconfig.cache
