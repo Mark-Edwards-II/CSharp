@@ -1,0 +1,12 @@
+/Users/markedwards/C#/collectionsPractice/bin/Debug/netcoreapp3.1/collectionsPractice.deps.json
+/Users/markedwards/C#/collectionsPractice/bin/Debug/netcoreapp3.1/collectionsPractice.runtimeconfig.json
+/Users/markedwards/C#/collectionsPractice/bin/Debug/netcoreapp3.1/collectionsPractice.runtimeconfig.dev.json
+/Users/markedwards/C#/collectionsPractice/bin/Debug/netcoreapp3.1/collectionsPractice.dll
+/Users/markedwards/C#/collectionsPractice/bin/Debug/netcoreapp3.1/collectionsPractice.pdb
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.csprojAssemblyReference.cache
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.AssemblyInfoInputs.cache
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.AssemblyInfo.cs
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.csproj.CoreCompileInputs.cache
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.dll
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.pdb
+/Users/markedwards/C#/collectionsPractice/obj/Debug/netcoreapp3.1/collectionsPractice.genruntimeconfig.cache
