@@ -38,7 +38,6 @@ namespace collectionsPractice
             foreach(KeyValuePair<string,string> pair in names2)
             {
                 Console.WriteLine(pair);
-
             }
 
             // Add key/value pairs to this dictionary where:
