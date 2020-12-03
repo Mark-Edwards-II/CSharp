@@ -5,6 +5,20 @@ namespace puzzles
 {
     class Program
     {
+        public static bool isUnique(int[] someArray, int vall)
+        {
+            bool True = true;
+            int i = 0;
+            while(True && i < someArray.Length)
+            {
+                if(someArray[i] == vall)
+                {
+                    return True = false;
+                }
+                i++;
+            }
+            return True;
+        }
         public static List<string> Names()
         {
             List<string> names = new List<string>()
@@ -16,10 +30,18 @@ namespace puzzles
                 "Geneva"
             };
             int i = 0;
+            int isRandom = 0;
+            int[] used = new int[names.Count];
             Random rand = new Random();
             while(i < names.Count)
             {
-                rand.Next(6);
+                isRandom = rand.Next(names.Count);
+                if(isUnique(used, isRandom))
+                    used[i] = isRandom;
+                // if this num unique?
+                // 
+                // include
+                
                 
                 Console.WriteLine(names[i]);
                 // if(names[i].Length < 5)
@@ -60,7 +82,7 @@ namespace puzzles
             Console.WriteLine($"Sum: {sum}, Max: {max}, Min: {min}");
             return randArrayOfInts;
         }
-        static string TossCoin()
+        public static string TossCoin()
         {
             Console.WriteLine("Tossing a Coin!");
             List<string> CoinSide = new List<string>()
@@ -73,7 +95,7 @@ namespace puzzles
             Console.WriteLine(resultzz);
             return resultzz;
         }
-        static double TossMultiCoin(int num)
+        public static double TossMultiCoin(int num)
         {
             int headCount = 0;
             int iteration = 0;
@@ -88,8 +110,9 @@ namespace puzzles
         }
         static void Main(string[] args)
         {
+            isUnique(new int[]{1,2,3,4,5,6}, 6);
             // TossCoin();
-            TossMultiCoin(5);
+            // TossMultiCoin(5);
             // RandomArray();
             // Names();
         }
