@@ -17,7 +17,7 @@ namespace deckOfCards.Models
 
         public Card Draw(Deck deckName)
         {
-            var selectedCard = deckName.Deal();
+            Card selectedCard = deckName.Deal();
             Console.WriteLine($"{Name} drew {selectedCard.Value} of {selectedCard.Suit}.");
             Hand.Add(selectedCard);
             return selectedCard;

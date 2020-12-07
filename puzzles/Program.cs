@@ -37,6 +37,10 @@ namespace puzzles
             {
                 isRandom = rand.Next(names.Count);
                 if(isUnique(used, isRandom))
+                {
+
+                }
+                    Console.WriteLine(names[]);
                     used[i] = isRandom;
                 // if this num unique?
                 // 
