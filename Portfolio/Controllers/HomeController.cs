@@ -1,23 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Portfolio.Models;
 
-namespace Portfolio.Controllers     
+namespace Portfolio.Controllers
 {
-    public class HomeController : Controller   
+    public class HomeController : Controller
     {
-        [HttpGet("")]
-        public string Index()
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
         {
-            return "This is my Index!";
+            _logger = logger;
         }
-        [HttpGet("projects")]
-        public string Projects()
+
+        public IActionResult Index()
         {
-            return "These are my projects.";
+            return View();
         }
-        [HttpGet("contact")]
-        public string contact()
+
+        public IActionResult Contact()
         {
-            return "This is my Contact!";
+            return View();
+        }
+        public IActionResult Projects()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
