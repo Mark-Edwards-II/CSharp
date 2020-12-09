@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Java"] = "Java";
+    ViewData["C#"] = "C#";
+    ViewData["Python"] = "Python";
+    ViewData["JavaScript"] = "JavaScript";
+    ViewData["PHP"] = "PHP";
+    ViewData["Chicago"] = "Chicago";
+    ViewData["Boise"] = "Boise";
+    ViewData["Tulsa"] = "Tulsa";
+    ViewData["Dallas"] = "Dallas";
+    ViewData["Silicon Valley"] = "Silicon Valley";
+}
+<div class="text-center w-75 bg-primary p-3 rounded-pill mx-auto">
+    <div class="text-center w-50 mx-auto">
+        <h1 class="display-4">Welcome</h1>
+        <form asp-action="Sub" asp-controller="Home" method="post">
+
+            <div class="text-left mw-25 d-inline-block">
+                <label for="Name">Your Name:</label><br>
+                <label for="location">Dojo Location:</label><br>
+                <label for="language">Favorite Language:</label><br>
+            </div>
+            <div class="text-right mw-25 d-inline-block">
+                <input type="text" name="Name"/><br>
+                <select name="location">
+                <option value=@ViewData["Chicago"]> @ViewData["Chicago"] </option>
+                <option value=@ViewData["Boise"]> @ViewData["Boise"] </option>
+                <option value=@ViewData["Tulsa"]> @ViewData["Tulsa"] </option>
+                <option value=@ViewData["Dallas"]> @ViewData["Dallas"] </option>
+                <option value=@ViewData["Silicon Valley"]> @ViewData["Silicon Valley"] </option>
+                </select><br>
+                <select name="language">
+                <option value=@ViewData["Java"]>@ViewData["Java"]</option>
+                <option value=@ViewData["C#"]>@ViewData["C#"]</option>
+                <option value=@ViewData["Python"]>@ViewData["Python"]</option>
+                <option value=@ViewData["JavaScript"]>@ViewData["JavaScript"]</option>
+                <option value=@ViewData["PHP"]>@ViewData["PHP"]</option>
+                </select><br>
+            </div>
+
+            <div class="text-left">
+                <label for="comment">Comment (optional):</label><br>
+                <textarea name="comment" rows="4" cols="50"/>
+                </textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <p>@ViewBag.ThisText</p>
+    @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</div>
