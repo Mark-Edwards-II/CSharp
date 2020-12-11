@@ -1,0 +1,11 @@
+@using ViewModelFun.Models
+
+@model Numz
+
+<div class="mx-auto text-center border border-dark">
+    @foreach(var item in Model.Numberz){
+        <p>@item</p>
+    }
+</div>
+
+<a asp-action="Users" asp-controller="Home"  >List of Users.</a>
