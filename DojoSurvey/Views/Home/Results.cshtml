@@ -1,0 +1,28 @@
+@using DojoSurvey.Models
+@model Survey
+
+@{
+    ViewData["Title"] = "Results Page";
+}
+
+<body>
+    <div id="container">
+        <div id="row">
+            <div id="sub_form">
+                <h1>Submitted Info:</h1>
+                <br>
+                <p>Name: @Model.Name</p>
+                <br>
+                <p>Dojo Location: @Model.Location</p>
+                <br>
+                <p>Favorite Language: @Model.Language</p>
+                <br>
+                <p>Comments: @Model.Comment</p>
+                <br>
+                <form action="/" method="" target="">
+                    <button type="submit">Go Back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

@@ -23,13 +23,16 @@ namespace DojoSurvey.Controllers
             return View();
         }
 
-        public IActionResult Sub(string name, string location, string language, string comment)
+        public IActionResult Sub(Survey ThisSurvey)
         {
-            @ViewBag.name = name;
-            @ViewBag.language = language;
-            @ViewBag.location = location;
-            @ViewBag.comment = comment;
-            return View();
+            if(ModelState.IsValid)
+            {
+                return View("Results", ThisSurvey);
+            }
+            else
+            {
+                return View("Index", ThisSurvey);
+            }
         }
 
         public IActionResult Privacy()
