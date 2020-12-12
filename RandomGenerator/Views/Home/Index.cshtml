@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @if(ViewBag.Count == 1)
+    {
+        <h4>Random passcode (passcode #@ViewBag.Count)</h4>
+    }
+    else
+    {
+        <h4>Random passcode (passcode #@ViewBag.Count)</h4>
+    }
+    <p class="mx-auto" > @ViewBag.NewString </p>
+    <a asp-action="Increment" asp-controller="Home" >Click Me!!!!!</a>
+</div>
