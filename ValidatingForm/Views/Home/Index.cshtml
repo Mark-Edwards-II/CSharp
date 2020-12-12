@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using ValidatingForm.Models
+@model User
+
+<div class="text-center">
+    <h1 class="display-4">Form Validaton</h1>
+    <form method="post" asp-action="Process" asp-controller="Home" class="col-6 mx-auto">
+        <div class="form-group">
+            <label asp-for="FName"></label>
+            <input asp-for="FName" class="form-control">
+            <span class="text-danger" asp-validation-for="FName" ></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LName"></label>
+            <input asp-for="LName" class="form-control">
+            <span class="text-danger" asp-validation-for="LName" ></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control">
+            <span class="text-danger" asp-validation-for="Age" ></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control">
+            <span class="text-danger" asp-validation-for="Email" ></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control">
+            <span class="text-danger" asp-validation-for="Password" ></span>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+
+
+</div>

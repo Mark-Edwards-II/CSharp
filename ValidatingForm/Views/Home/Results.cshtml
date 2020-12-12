@@ -1,0 +1,30 @@
+@using ValidatingForm.Models
+@model User
+
+@{
+    ViewData["Title"] = "Results Page";
+}
+
+<body>
+    <div id="container">
+        <div id="row">
+            <div id="sub_form">
+                <h1>Submitted Info:</h1>
+                <br>
+                <p>First name: @Model.FName</p>
+                <br>
+                <p>Last name: @Model.LName</p>
+                <br>
+                <p>Age: @Model.Age</p>
+                <br>
+                <p>Email: @Model.Email</p>
+                <br>
+                <p>Unsecure Password: @Model.Password</p>
+                <br>
+                <form action="/" method="" target="">
+                    <button type="submit">Go Back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
