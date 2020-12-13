@@ -1,0 +1,65 @@
+(int)HttpContext.Session.GetInt32("Happiness");
+(int)HttpContext.Session.GetInt32("Fullness");
+(int)HttpContext.Session.GetInt32("Energy");
+(int)HttpContext.Session.GetInt32("Meals");
+
+
+
+
+HttpContext.Session.SetInt32("Happiness", (int)Adrien.Happiness);
+HttpContext.Session.SetInt32("Fullness", (int)Adrien.Fullness);
+HttpContext.Session.SetInt32("Energy", (int)Adrien.Energy);
+HttpContext.Session.SetInt32("Meals", (int)Adrien.Meals);
+
+
+
+            HttpContext.Session.SetInt32("Fullness", (int)HttpContext.Session.GetInt32("Fullness")-= rand.Next(5, 10));
+            HttpContext.Session.SetInt32("Meals", (int)Adrien.Meals);
+            int Fullness = (int)HttpContext.Session.GetInt32("Fullness")-= rand.Next(5, 10);
+            int Meals = (int)HttpContext.Session.GetInt32("Meals");
+            Fullness -= rand.Next(5, 10);
+            Meals -= 1;
+            return RedirectToAction("Index");
+        }
+        // 
+        public IActionResult Play()
+        {
+            Random rand = new Random();
+            HttpContext.Session.SetInt32("Happiness", (int)Adrien.Happiness);
+            HttpContext.Session.SetInt32("Fullness", (int)Adrien.Fullness);
+            HttpContext.Session.SetInt32("Energy", (int)Adrien.Energy);
+            HttpContext.Session.SetInt32("Meals", (int)Adrien.Meals);
+            int Happiness = (int)HttpContext.Session.GetInt32("Happiness");
+            int Energy = (int)HttpContext.Session.GetInt32("Energy");
+            Happiness += rand.Next(5, 10);
+            Energy -= 5;
+            return RedirectToAction("Index");
+        }
+        // 
+        public IActionResult Work()
+        {
+            HttpContext.Session.SetInt32("Happiness", (int)Adrien.Happiness);
+            HttpContext.Session.SetInt32("Fullness", (int)Adrien.Fullness);
+            HttpContext.Session.SetInt32("Energy", (int)Adrien.Energy);
+            HttpContext.Session.SetInt32("Meals", (int)Adrien.Meals);
+            int Meals = (int)HttpContext.Session.GetInt32("Meals");
+            int Energy = (int)HttpContext.Session.GetInt32("Energy");
+            Random rand = new Random();
+            Meals += rand.Next(1, 3);
+            Energy -= 5;
+            return RedirectToAction("Index");
+        }
+        public IActionResult Sleep()
+        {
+            HttpContext.Session.SetInt32("Happiness", (int)Adrien.Happiness);
+            HttpContext.Session.SetInt32("Fullness", (int)Adrien.Fullness);
+            HttpContext.Session.SetInt32("Energy", (int)Adrien.Energy);
+            HttpContext.Session.SetInt32("Meals", (int)Adrien.Meals);   
+            int Fullness = (int)HttpContext.Session.GetInt32("Fullness");
+            int Happiness = (int)HttpContext.Session.GetInt32("Happiness");
+            int Energy = (int)HttpContext.Session.GetInt32("Energy");
+            Fullness -= 5;
+            Happiness -= 5;
+            Energy +=15;
+            return RedirectToAction("Index");
+        }

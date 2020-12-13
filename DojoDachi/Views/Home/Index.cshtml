@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Dojodachi</h1>
+</div>
+
+<div class="text-center">
+    <div>
+        <h6> @ViewBag.Count </h6>
+        <p>Fullness: @ViewBag.Fullness Happiness: @ViewBag.Happiness Meals: @ViewBag.Meals Energy: @ViewBag.Energy</p>
+    </div>
+    <div style="Height: 400px; Width: 400px;" class="mx-auto border border-dark pt-5" >
+        <img class="mx-auto" style="Height: 100px; Width: 100px; backgound-image: contain;" src="~/image/RickNMorty.png" alt="Dojodachi"><br>
+        <p class="text-center mt-5">@ViewBag.Standing
+        </p>
+    </div> 
+    @if(@ViewBag.Standing.Length == 46 || @ViewBag.Standing.Length == 36)
+    {
+        <div class="mx-auto">
+            <a class="btn btn-info btn-outline-warning" asp-action="">Restart</a>
+        </div>
+    }
+    else
+    {
+        <div class="mx-auto pt-3">
+            <a class="m-2 border border-dark" asp-action="Feed" asp-controller="Home">Feed</a>
+            <a class="m-2 border border-dark" asp-action="Play">Play</a>
+            <a class="m-2 border border-dark" asp-action="Work">Work</a>
+            <a class="m-2 border border-dark" asp-action="Sleep">Sleep</a>
+        </div>
+    }
+
+
+</div>
+
+
